@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="first">
+        <nav>
+            <img src="https://images.ctfassets.net/4cd45et68cgf/7LrExJ6PAj6MSIPkDyCO86/542b1dfabbf3959908f69be546879952/Netflix-Brand-Logo.png?w=684&h=456" alt="">
+            <div id="buttons-nav">
+                <select name="Idioma" id="idioma" style="background-color: transparent; color:white; border-radius: 3px; border-color: white;">
+                    <option value="pt" style="background-color:grey;">Português</option>
+                    <option value="pt" style="background-color:grey;">English</option>
+
+                </select>
+                <button id="bt-nav">Entrar</button>
+            </div> 
+        </nav>
+        <div id="home-text">
+            <h1>Filmes, séries e muito mais. <br>Sem limites.</h1>
+            <p>Assista onde quiser. Cancele quando quiser.</p>
+              <form action="">
+                <p>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+                <input type="text" placeholder="Email" > <input type="button" value="Vamos lá">
+              </form>
+        </div>
+    </section>
+
+    <section class="info">
+        <div id="text">
+            <h1>Aproveite na TV.</h1>
+            <p>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.</p>
+        </div>
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="" >
+    </section>
+
+    <section class="info">
+        <div id="text">
+            <h1>Baixe séries para assistir offline.</h1>
+            <p>Salve seus títulos favoritos e sempre tenha algo para assistir.</p>
+        </div>
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="">
+    </section>
+
+    <section class="info">
+        <div id="text">
+            <h1>Assista quando quiser.</h1>
+            <p>Assista no celular, tablet, Smart TV ou notebook sem pagar a mais por isso.</p>
+        </div>
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png" alt="" >
+    </section>
+   
+    <section class="info">
+        <div id="text">
+            <h1>Crie perfis para crianças.</h1>
+            <p>Deixe as crianças se aventurarem com seus personagens favoritos em um espaço feito só para elas, sem pagar a mais por isso.</p>
+        </div>
+        <img src="https://occ-0-3227-1740.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABWGB3YOpSh2wA7OOZQYD-MkalQ0oJEy-YEEpoPKAIenLtZf5lKeERDdKj-u6WnZx9wx_QuiDVHkGM_1QmVQt9yxM7mKjevBNHKFz.png?r=1b8" alt="">
+    </section>
+    
+   <section id="ask">
+
+    <h1>Perguntas frequentes</h1>
+    
+    <div id="questions">
+        
+        
+            <button class="ask-button" onclick="mostrarText()">O que é a Netflix?</button>
+            <div id="ask1">
+               <p class="ask-text">A Netflix é um serviço de transmissão online que oferece uma ampla variedade de séries, filmes e documentários premiados em milhares de aparelhos conectados à internet.
+                <br><br> Você pode assistir a quantos filmes e séries quiser, quando e onde quiser, sem comerciais – tudo por um preço mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.</p>
+            </div>
+            <button class="ask-button" onclick="mostrarText2()">Quanto custa a Netflix?</button>
+            <div id="ask2">
+                <p class="ask-text">Assista à Netflix no seu celular, tablet, Smart TV, notebook ou aparelho de streaming por uma taxa mensal única. Os planos variam de R$25,90 a R$55,90 por mês. Sem contrato nem taxas extras.</p>
+            </div>
+            <button class="ask-button" onclick="mostrarText3()">Onde posso assistir?</button>
+            <div id="ask3">
+                <p class="ask-text">Assista onde quiser, quando quiser. Faça login com sua conta Netflix em netflix.com para começar a assistir no computador ou em qualquer aparelho conectado à Internet compatível com o aplicativo Netflix, como Smart TVs, smartphones, tablets, aparelhos de streaming e videogames.
+                   <br><br> Você também pode baixar a sua série favorita com o aplicativo Netflix para iOS, Android ou Windows 10. Use downloads para levar a Netflix para onde quiser sem precisar de conexão com a Internet. Leve a Netflix com você para qualquer lugar.</p>
+            </div>
+            <button class="ask-button" onclick="mostrarText4()">Como faço para cancelar?</button>
+            <div id="ask4">
+                <p class="ask-text">A Netflix é flexível. Não há contratos nem compromissos. Você pode cancelar a sua conta na internet com apenas dois cliques. Não há taxa de cancelamento – você pode começar ou encerrar a sua assinatura a qualquer momento.</p>
+            </div>
+            <button class="ask-button" onclick="mostrarText5()">O que posso assistir na Netflix?</button>
+            <div id="ask5">
+                <p class="ask-text">A Netflix tem um grande catálogo de filmes, documentários, séries, originais Netflix premiados e muito mais. Assista o quanto quiser, quando quiser.</p>
+            </div>
+            <button class="ask-button" onclick="mostrarText6()">A netflix é adequada para crianças?</button>
+            <div id="ask6">
+                <p class="ask-text">A experiência infantil da Netflix faz parte da sua assinatura para que as crianças se divirtam em seu próprio espaço com séries e filmes familiares sob a supervisão dos responsáveis.
+                   <br><br> O recurso de controle parental, incluso nos perfis para crianças e protegido por PIN, permite restringir a classificação etária do conteúdo que as crianças podem ver e bloquear títulos específicos que você não quer que elas assistam.</p>
+            </div>
+
+       
+    </div>
+    
+   </section>
+
+   <script src="script.js"></script>
+</body>
+</html>

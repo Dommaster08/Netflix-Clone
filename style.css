@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#first{
+    background-image: url("https://cdn.falauniversidades.com.br/wp-content/uploads/2018/03/fala-universidades-netflix-3.jpg");
+    background-size: cover;
+    padding: 5px;
+    /* max-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1330px;
+    align-items: center;
+}
+
+nav img{
+    max-width:160px;
+    max-height:80px
+}
+
+#bt-nav{
+    text-align: center;
+    margin-left: 5px;
+    background-color: red;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    padding: 7px 15px;
+}
+
+select{
+    padding: 5px;
+}
+
+#home-text{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 180px;
+}
+input[type=text]{
+    width: 450px;
+}
+form{
+    margin-top: 25px;
+    font-size: 1.2rem;
+}
+form input{
+    margin-top: 12px;
+    padding: 12px;
+}
+
+#text{
+    padding: 30px ;
+}
+
+.info{
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 90px 50px;
+    justify-content: space-between;
+}
+
+.info img{
+    max-height: 290px;
+    max-width: 370px;
+}
+
+.info h1{
+    font-size: 3rem;
+    font-weight: 100;
+}
+.info p{
+    margin-top: 20px;
+    font-size: 1.8rem;
+}
+
+#ask{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#ask h1{
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+#ask p{
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    padding: 25px;
+}
+
+
+.ask-button{
+    background-color: #2e2e2e;
+    padding: 20px;
+    margin: 5px;
+    text-align: start;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+}
+
+#questions{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  text-align: start;
+}
+
+
+#ask1, #ask2, #ask3, #ask4, #ask5, #ask6{
+    margin: 6px;
+    display: none;
+}
+
+@media (max-width: 768px){
+
+    #home-text{
+        max-width: 700px;
+        /* margin-top: 80px; */
+        padding: 50px;
+    }
+    #first{
+        max-height: 800px;
+    }
+    #first h1{
+    font-size: 2rem; 
+    }
+    #first p{
+        font-size: 1.5rem; 
+        }
+    .info img{
+        max-height: 300px;
+        max-width: 360px;
+      }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .info h1{
+        font-size: 2.5rem;
+    }
+    .info p{
+        font-size: 1.5rem;
+    }
+    input[type=text]{
+        width: 250px;
+    }
+}
+
+@media (max-width: 360px){
+
+
+    
+    nav img{
+    width:100px;
+    height:60px;
+    margin-top: 7px;
+    }
+    /* #first{
+        max-width: 500px;
+       } */
+
+       #home-text{
+        padding: 25px;
+        max-width: 250px;
+       }
+    section{
+        max-width: 360px;
+    }
+    .info img{
+        max-height: 180px;
+        max-width: 200px;
+      }
+
+      .info{
+        padding: 25px;
+      }
+
+    #ask h1{
+        font-size: 2rem;
+    }
+
+    .ask-button{
+        background-color: #2e2e2e;
+        padding: 10px;
+        margin: 5px;
+        text-align: start;
+        font-size: 1rem;
+        color: white;
+    }
+    input[type=text]{
+        width: 150px;
+    }
+}
